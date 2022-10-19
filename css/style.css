@@ -1,0 +1,360 @@
+/* Début de contenu CSS */
+
+
+
+/************************
+******** POLICES ********
+*************************/
+
+@font-face {
+    font-family: CormorantBold;
+    src: url('../fonts/Cormorant-Bold.ttf');
+}
+
+@font-face {
+    font-family: CormorantBoldItalic;
+    src: url('../fonts/Cormorant-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: CormorantItalic;
+    src: url('../fonts/Cormorant-Italic.ttf');
+}
+
+@font-face {
+    font-family: CormorantLight;
+    src: url('../fonts/Cormorant-Light.ttf');
+}
+
+@font-face {
+    font-family: CormorantLightItalic;
+    src: url('../fonts/Cormorant-LightItalic.ttf');
+}
+
+@font-face {
+    font-family: CormorantMedium;
+    src: url('../fonts/Cormorant-Medium.ttf');
+}
+
+@font-face {
+    font-family: CormorantMediumItalic;
+    src: url('../fonts/Cormorant-MediumItalic.ttf');
+}
+
+@font-face {
+    font-family: CormorantRegular;
+    src: url('../fonts/Cormorant-Regular.ttf');
+}
+
+@font-face {
+    font-family: CormorantSemiBold;
+    src: url('../fonts/Cormorant-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: CormorantSemiBoldItalic;
+    src: url('../fonts/Cormorant-SemiBoldItalic.ttf');
+}
+
+
+/***************************
+******** GLOBAL CSS ********
+****************************/
+
+body {
+    font-family: 'CormorantRegular', serif;
+}
+
+img {
+    display: block;
+}
+
+.bg-marronFonce {
+    background-color: #260F01;
+}
+
+.bg-marronClair {
+    background-color: #A68263;
+}
+
+.text-color-marronFonce {
+    color: #260F01;
+}
+.text-color-marronClair {
+    color: #A68263;
+}
+
+/****************************
+******** TYPOGRAPHIE ********
+*****************************/
+h1 {
+    font-family: 'CormorantRegular', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 2em;
+    margin: 0;
+}
+
+#coverParagraphe {
+    font-family: 'CormorantSemiBold', serif;
+    letter-spacing: 0.19em;
+    margin: 0;
+}
+
+#header {
+    padding-top: 30px;
+}
+
+#mainPresentation h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+#mainParagraphe1 {
+    letter-spacing: 0.33em;
+    font-weight: bold;
+}
+
+#mainParagraphe2 {
+    text-align: justify;
+    padding: 0 50px;
+    margin: 30px 0;
+}
+
+#mainParagraphe3 {
+    font-style: italic;
+    letter-spacing: 0.25em;
+    margin-bottom: 40px;
+}
+
+.mainCarre p {
+    text-align: center;
+    letter-spacing: 0.2em;
+    margin: 0;
+}
+
+.mainCarre span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+#footerAdresse h3 {
+    font-family: 'CormorantSemiBold', serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    margin: 0 0 5px 0;
+}
+
+#footerAdresse h3:nth-child(3) {
+    margin-top: 10px;
+}
+
+#footerAdresse p {
+    font-size: 0.6rem;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+#footerCopy p {
+    font-size: 0.7rem;
+    letter-spacing: .3em;
+    margin: 0 0 5px 0;
+}
+
+
+/****************************************************
+******** ELEMENTS (navbar, carrousel, cards) ********
+*****************************************************/
+
+nav {
+    letter-spacing: 0.3em;
+}
+
+#menuVoyage,
+#menuRestauration,
+#menuHotel {
+    position: relative;
+    padding-left: 15px;
+}
+
+#menuVoyage a,
+#menuRestauration a,
+#menuHotel a {
+    padding: 0;
+    margin: 0;
+}
+
+#menuVoyage::before {
+    content: "";
+    background-image: url(../images/icon-valise.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 50px;
+}
+
+#menuRestauration::before {
+    content: "";
+    background-image: url(../images/icon-repas.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 50px;
+}
+
+#menuHotel::before {
+    content: "";
+    background-image: url(../images/icon-lit.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 50px;
+}
+
+/******************************
+******** SECTIONS HTML ********
+*******************************/
+
+#logo {
+    margin: auto;
+    width: 250px;
+}
+
+#logo-mobile {
+    display: none;
+}
+
+#cover {
+    width: 100%;
+    height: 60vh;
+    background-image: url(../images/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#coverTitle {
+    text-align: center;
+    background-color: rgba(255, 255, 255, .8);
+    padding: 10px 25px;
+    transform: translateY(-5px);
+    border-bottom: 2px solid black;
+}
+
+/* HR */
+#coverSeparator {
+    width: 20%;
+    margin: 10px auto;
+}
+
+
+#mainPresentation {
+    text-align: center;
+    padding: 100px 0 100px 0;
+}
+
+#btnReserv {
+    font-family: 'Calibri', sans-serif;
+    font-size: .95em;
+    letter-spacing: 0.2em;
+    padding: 5px 10px;
+}
+
+#btnSavoirPlus,
+#btnServiceClient {
+    font-family: 'Calibri', sans-serif;
+    font-size: 0.9em;
+}
+
+#btnSavoirPlus {
+    margin-right: 10px;
+}
+
+#btnServiceClient {
+    margin-left: 10px;
+}
+
+#mainDecoration {
+    background-image: url(../images/section.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+#mainRectContainer {
+    width: 300px;
+    height: 450px;
+    position: relative;
+}
+
+.mainCarre {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainCarre:nth-child(1) {
+    right: 0;
+}
+
+.mainCarre:nth-child(1)::after {
+    display: block;
+    content: url(../images/icon-valise.jpg);
+    position: absolute;
+    left: 100%;
+}
+
+.mainCarre:nth-child(2) {
+    top: 33.33%
+}
+
+.mainCarre:nth-child(2)::before {
+    content: url(../images/icon-repas.jpg);
+    position: absolute;
+    right: 100%;
+}
+
+.mainCarre:nth-child(3) {
+    bottom: 0;
+    right: 0;
+}
+
+.mainCarre:nth-child(3)::after {
+    content: url(../images/icon-lit.jpg);
+    position: absolute;
+    left: 100%;
+}
+
+
+#footerDecoration {
+    background-image: url(../images/footer.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#footerAdresse {
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+}
+
+#footerCopy {
+    background-image: url(../images/rameau.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10%;
+    text-align: center;
+    min-height: 160px;
+}
+
+/* Fin de contenu CSS */

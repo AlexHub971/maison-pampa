@@ -1,0 +1,117 @@
+/* Début de contenu CSS RESPONSIVE */
+
+
+/* XXL */
+@media all and (max-width: 1400px) {
+    
+        
+    
+    
+    #footerCopy {
+    background-size: calc(22% - 1.5em);
+    }   
+}
+
+/* XL */
+@media all and (max-width: 1200px) {
+    
+    
+    
+    #footerCopy {
+    background-size: calc(22% - 1.5em);
+    }    
+}
+
+/* LARGE */
+@media all and (max-width: 992px) {
+
+    #logo {
+        display: none;
+    }
+
+    #logo-mobile {
+        display: inline-block;
+        margin: auto;
+        width: 250px;
+    }
+    
+    #btnReserv {
+        margin: 30px 0 0 0;
+    }
+    
+    .dropdown-menu  {
+        width: 50%;
+        margin: auto;
+    }    
+    
+    #footerCopy {
+    background-size: calc(10% - 2.2em);
+    }
+}
+
+/* MEDIUM */
+@media all and (max-width: 768px) {
+
+    #cover {
+        background-size: 140%;
+    }
+
+    #coverTitle {
+        width: 200px;
+        height: 200px;
+    }
+
+    #coverParagraphe {
+        text-align: left;
+    }
+
+    #coverSeparator {
+        width: 60%;
+    }
+
+    #mainPresentation {
+        text-align: left;
+        padding: 70px 30px;
+    }
+
+    #mainParagraphe2 {
+        padding: 0;
+    }
+
+    #btnSavoirPlus,
+    #btnServiceClient {
+        display: block;
+        margin: 5px auto;
+        font-size: 1.1em;
+    }
+
+    #footerAdresse {
+        padding: 10px 0;
+    }
+
+    #footerAdresse h3:nth-child(1),
+    #footerAdresse h3:nth-child(3) {
+        font-size: 17px;
+    }
+
+    #footerAdresse p:nth-child(2),
+    #footerAdresse p:nth-child(4) {
+        font-size: 15px;
+    }
+    
+    #footerCopy {
+    background-size: calc(10% - 1.5em);
+    }
+
+}
+
+/* SMALL */
+@media all and (max-width: 576px) {
+    
+    #footerCopy {
+    background-size: calc(10% - 0.7em);
+    }
+    
+}
+
+/* Fin de contenu CSS RESPONSIVE */

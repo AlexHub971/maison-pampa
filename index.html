@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--        TITRE DE LA PAGE    -->
+    <title>TP Maison Pampa</title>
+
+    <!--    GOOGLE FONT -->
+    <!--    CORMORANT DANS LE CSS-->
+
+    <!--        BOOTSTRAP CSS   -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!--        MES STYLES ET JAVASCRIPT PERSONNALISES    -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <!--        FONT AWESOME ICONS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Début de contenu HTML -->
+
+    <!--        BLOC HEADER  -->
+
+    <div id="header" class="container-fluid mb-5">
+        <div class="row justify-content-center">
+            <div class="col-12 gx-0">
+
+                <!--**********
+                *****LOGO*****
+                ***********-->
+                <img id="logo" src="images/logo-maison-pampa.png" alt="Maison Pampa">
+
+
+                <!--****************
+                *****NAVIGATION*****
+                *****************-->
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-white col-lg-12 col-md-12 mx-auto gx-0">
+                    <div class="container-fluid justify-content-center">
+
+                        <a class="navbar-brand" href="#">
+                            <img id="logo-mobile" src="images/logo-maison-pampa-mobile.png" alt="Maison Pampa">
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Welcome</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Maison Pampa
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                        <li id="menuVoyage" class="d-flex align-items-center">
+                                            <a class="dropdown-item" href="#">Voyage</a>
+                                        </li>
+
+                                        <li id="menuRestauration" class="d-flex align-items-center">
+                                            <a class="dropdown-item" href="#">Restauration</a>
+                                        </li>
+
+                                        <li id="menuHotel" class="d-flex align-items-center">
+                                            <a class="dropdown-item" href="#">Hôtellerie</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Gastronomie
+                                    </a>
+                                    <ul class="dropdown-menu text-capitalize" aria-labelledby="navbarDropdown2">
+                                        <li><a class="dropdown-item" href="#">Les entrées</a></li>
+                                        <li><a class="dropdown-item" href="#">Les plats</a></li>
+                                        <li><a class="dropdown-item" href="#">Les desserts</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider w-50 mx-auto">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Les menus</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <button id="btnReserv" type="button" class="btn bg-marronClair rounded-3 text-uppercase text-white">
+                                        Réserver
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--      FIN  BLOC HEADER  -->
+
+    <!--      BLOC MAIN -->
+
+    <!--***********
+    *****COVER*****
+    ************-->
+    <div id="cover" class="d-flex justify-content-center align-items-center">
+        <div id="coverTitle">
+            <h1 class="text-color-marronClair fw-bold">Maison Pampa</h1>
+            <hr id="coverSeparator">
+            <p id="coverParagraphe">La Maison du luxe qui vous charme !</p>
+        </div>
+    </div>
+
+
+    <!--******************
+    *****PRESENTATION*****
+    *******************-->
+    <div id="main" class="container-fluid">
+        <div class="row">
+            <div id="mainPresentation" class="col-lg-6">
+                <h2 class="text-color-marronClair">Bienvenue chez vous</h2>
+                <p id="mainParagraphe1" class="text-color-marronClair">
+                    Découvrez l'essentiel du bien-être&hellip;
+                </p>
+                <p id="mainParagraphe2">
+                    L'équipe de <span class="text-color-marronFonce">Maison Pampa</span> met tout son coeur et son professionnalisme pour vous assurer un service discret et réactif, afin de vivre une parenthèse enchantée. Nous vous accueillerons avec bonheur et simplicité, nous vous guiderons dans le déroulé de vos journées, à votre rythme, selon vos envies&hellip;
+                </p>
+                <p id="mainParagraphe3">
+                    Discrétion, déconnexion, décontration, détente, délices&hellip;
+                </p>
+
+                <button id="btnSavoirPlus" type="button" class="btn bg-marronFonce text-white rounded-3">Je souhaite en savoir plus</button>
+
+                <button id="btnServiceClient" type="button" class="btn bg-marronClair text-white rounded-3">Contacter le Service Client</button>
+            </div>
+
+            <!--*********************
+            *****BLOC DECORATION*****
+            **********************-->
+            <div id="mainDecoration" class="col-lg-6 d-flex justify-content-center align-items-center">
+                <div id="mainRectContainer">
+                    <div class="mainCarre">
+                        <p>
+                            <span class="text-color-marronClair fw-bolder">Voyagez</span> maintenant
+                        </p>
+                    </div>
+                    <div class="mainCarre">
+                        <p>
+                            <span class="text-color-marronClair fw-bolder">Mangez</span> délicieusement
+                        </p>
+                    </div>
+                    <div class="mainCarre">
+                        <p>
+                            <span class="text-color-marronClair fw-bolder">Dormez</span> paisiblement
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--      FIN BLOC MAIN -->
+
+
+    <!--        BLOC FOOTER -->
+    <div id="footer" class="container-fluid">
+
+        <div class="row">
+
+            <div id="footerDecoration" class="col-lg-6">
+                <!-- IMAGE BG FOOTER -->
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="container-fluid g-0">
+
+                    <div class="row">
+
+                        <div id="footerAdresse" class="col-lg-6 bg-marronFonce">
+
+                            <h3>Adresse</h3>
+                            <p>Maison Pampa, 148, allée des Violettes 84100 UCHAUX</p>
+                            <h3>Téléphone</h3>
+                            <p>+33 (0) 6 77 19 58 86</p>
+
+                        </div>
+                        <div id="footerCopy" class="col-lg-6 d-flex justify-content-center align-items-end">
+                            <p class="text-color-marronClair">
+                                2022 &copy; Tous droits réservés
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!--      FIN BLOC FOOTER -->
+
+
+    <!-- Fin de contenu HTML -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body></html>
